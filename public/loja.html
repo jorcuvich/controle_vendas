@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden King</title>
+    <link rel="stylesheet" href="loja.css">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h2>Loja</h2>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Início</a></li>
+                  <li><a href="loja.html">Loja</a></li>
+                  <li><a href="comprador.html">Cadastrar Comprador</a></li>
+                  <li><a href="produto.html">Cadastrar Produto</a></li>
+                  <li><a href="pedido.html">Cadastrar Pedido</a></li>
+                  
+                </ul>
+            </nav>
+          </div>
+    </header>
+    <div class="meio">
+    <section id="products">
+        <div class="product" id="product-1">
+            <img src="img/1.png" alt="Produto 1">
+            <h4>Produto 1</h4>
+            <p>Preço: R$ 99,99</p>
+            <button onclick="addToCart('Produto 1', 99.99, 'product-1')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" id="product-2">
+            <img src="img/2.png" alt="Produto 2">
+            <h4>Produto 2</h4>
+            <p>Preço: R$ 99,99</p>
+            <button onclick="addToCart('Produto 2', 99.99, 'product-2')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" id="product-3">
+            <img src="img/5.png" alt="Produto 3">
+            <h4>Produto 3</h4>
+            <p>Preço: R$ 129,99</p>
+            <button onclick="addToCart('Produto 3', 129.99, 'product-3')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" id="product-4">
+            <img src="img/3.png" alt="Produto 4">
+            <h4>Produto 4</h4>
+            <p>Preço: R$ 59,99</p>
+            <button onclick="addToCart('Produto 4', 59.99, 'product-4')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" id="product-5">
+            <img src="img/4.png" alt="Produto 5">
+            <h4>Produto 5</h4>
+            <p>Preço: R$ 99,99</p>
+            <button onclick="addToCart('Produto 5', 99.99, 'product-5')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" id="product-6">
+            <img src="img/6.png" alt="Produto 6">
+            <h4>Produto 6</h4>
+            <p>Preço: R$ 99,99</p>
+            <button onclick="addToCart('Produto 6', 99.99, 'product-6')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" id="product-7">
+            <img src="img/5.png" alt="Produto 7">
+            <h4>Produto 7</h4>
+            <p>Preço: R$ 99,99</p>
+            <button onclick="addToCart('Produto 7', 99.99, 'product-7')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" id="product-8">
+            <img src="img/2.png" alt="Produto 8">
+            <h4>Produto 8</h4>
+            <p>Preço: R$ 99,99</p>
+            <button onclick="addToCart('Produto 8', 99.99, 'product-8')">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+    </div>
+    <section id="cart" class="hidden">
+        <h2>Carrinho de Compras</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">
+            <strong>Total: R$ <span id="total-price">0,00</span></strong>
+        </div>
+        <button onclick="clearCart()">Limpar Carrinho</button>
+        <button onclick="toggleCart()">Fechar</button>
+    </section>
+
+    <div class="offer">
+      <div class="small-container">
+          <div class="row">
+              <div class="col-2">
+                  <img src="img/caneca.png">
+              </div>
+              <div class="col-2">
+                  <h4>excluisvo apenas em golden king!</h4>
+                  <h1>caneca king</h1>
+                  <p>Após a realização de 100 pedidos, o cliente será surpreendido com uma caneca exclusiva, projetada para celebrar essa conquista.
+                    <br>
+                    A caneca é feita de cerâmica de alta qualidade, com um acabamento brilhante que reflete a luz de maneira encantador.</p>
+                  <br>
+                  <a href="" class="btn">Compre já</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <footer>
+        <div class="footer-container">
+          <!-- Coluna 1: Links Institucionais -->
+          <div class="footer-column">
+            <h3>Institucional</h3>
+            <ul>
+              <li><a href="/sobre-nos">Sobre nós</a></li>
+              <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+              <li><a href="/termos-de-uso">Termos de Uso</a></li>
+              <li><a href="/carreiras">Trabalhe Conosco</a></li>
+              <li><a href="/fale-conosco">Fale Conosco</a></li>
+            </ul>
+          </div>
+      
+          <!-- Coluna 2: Atendimento e Suporte -->
+          <div class="footer-column">
+            <h3>Atendimento</h3>
+            <ul>
+              <li><a href="/faq">Perguntas Frequentes (FAQ)</a></li>
+              <li><a href="/suporte">Suporte Técnico</a></li>
+              <li><a href="/trocas-e-devolucoes">Trocas e Devoluções</a></li>
+              <li><a href="/politica-de-envio">Política de Envio</a></li>
+              <li><a href="/formulario-de-contato">Formulário de Contato</a></li>
+            </ul>
+          </div>
+      
+      
+          <!-- Coluna 4: Informações de Pagamento e Segurança -->
+        <div class="footer-column">
+            <h3>Formas de Pagamento</h3>
+            <ul>
+              <li><a href="/formas-de-pagamento">Cartão de Crédito</a></li>
+              <li><a href="/formas-de-pagamento">Boleto Bancário</a></li>
+              <li><a href="/formas-de-pagamento">Pix</a></li>
+              <li><a href="/formas-de-pagamento">PayPal</a></li>
+            </ul>
+            <h3>Segurança</h3>
+            <ul>
+              <li><a href="/certificados-de-seguranca">Certificados de Segurança</a></li>
+              <li><a href="/seguranca-no-pagamento">Segurança nos Pagamentos</a></li>
+            </ul>
+        </div>
+      
+          <!-- Coluna 5: Redes Sociais -->
+          <div class="footer-column">
+            <h3>Redes Sociais</h3>
+            <ul>
+              <li><a href="https://facebook.com/loja" target="_blank">Facebook</a></li>
+              <li><a href="https://instagram.com/loja" target="_blank">Instagram</a></li>
+              <li><a href="https://twitter.com/loja" target="_blank">Twitter</a></li>
+              <li><a href="https://linkedin.com/company/loja" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Barra de direitos autorais -->
+        <div class="footer-bottom">
+          <p1>&copy; 2024 Loja Exemplo. Todos os direitos reservados.</p1>
+          <p1></p1>
+          <p1>Desenvolvido por <a href="https://www.desenvolvedor.com" target="_blank">Desenvolvedor Web</a></p1>
+        </div>
+      </footer>
+      
+        </div>
+    <script src="img/loja.js"></script>
+</body>
+</html>
